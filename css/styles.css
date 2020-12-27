@@ -114,15 +114,32 @@ header {
 }
 /* герой */
 .hero {
-  background-color: #2f303a;
+  background-color: #c4c4c4;
   color: var(--primery-white-color);
   text-align: center;
+}
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/hero-image-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 200px;
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -226,6 +243,33 @@ header {
   background-color: #f5f4fa;
   padding: 94px 0;
 }
+.social-network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.social-network .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+.social-network .link:hover {
+  background-color: var(--accent-color);
+  color: var(--primery-white-color);
+}
+.social-network .item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
 .teams-title {
   margin: 0 0 50px;
   color: var(--title-text-color);
@@ -241,6 +285,8 @@ header {
   line-height: 1.9;
   text-align: center;
   border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-elements:nth-child(4) {
   margin: 0;
@@ -293,6 +339,12 @@ header {
   background-color: #2f303a;
   padding: 60px 0;
 }
+.footer-container {
+  display: flex;
+}
+.footer-info {
+  margin-right: 70px;
+}
 .footer .logo {
   display: block;
   margin: 0 0 20px;
@@ -312,7 +364,39 @@ header {
 .footer-link:last-child {
   margin: 0;
 }
+.join {
+  display: block;
+  align-items: flex-start;
+}
+.join > p {
+  margin-top: 0;
+  margin-bottom: 20px;
 
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primery-white-color);
+}
+.join .list {
+  display: flex;
+}
+.join .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--primery-white-color);
+}
+.join .link:hover,
+.join .link:focus {
+  background: var(--accent-color);
+}
+.join .item:not(:last-child) {
+  margin-right: 10px;
+}
 /* страница портфолио */
 .project {
   background-color: var(--primery-white-color);
@@ -352,6 +436,11 @@ header {
   width: calc ((100%-60px)/3);
   margin-right: 30px;
   margin-bottom: 30px;
+}
+.card > .item:focus,
+.card > .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .card > .item.item:nth-child(3n) {
   margin-right: 0;
