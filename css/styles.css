@@ -258,6 +258,7 @@ header {
   border-radius: 50%;
   color: #afb1b8;
 }
+.social-network .link:focus,
 .social-network .link:hover {
   background-color: var(--accent-color);
   color: var(--primery-white-color);
@@ -297,7 +298,7 @@ header {
   font-weight: 500;
 }
 .team-text {
-  margin: 0 0 30px;
+  margin: 0 0 16px;
 }
 .customer {
   padding: 94px 0;
@@ -437,8 +438,10 @@ header {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.card > .item:focus,
-.card > .item:hover {
+.card .list:focus,
+.card .list:hover {
+  display: block;
+  outline: none;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -467,4 +470,7 @@ header {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+.img {
+  display: block;
 }
